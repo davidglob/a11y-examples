@@ -1,0 +1,150 @@
+#modalOverlay {
+  width: 100%;
+  height: 100%;
+  z-index: 2; /* places the modal overlay between the main page and the modal dialog*/
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+#modal {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  border: thin #000 solid;
+  background-color: #fff;
+  z-index: 3; /* places the modal dialog on top of everything else */
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  display: none;
+}
+#modal h1 {
+  text-align: center;
+}
+
+.modalCloseButton {
+  float: right;
+  position: absolute;
+  top: 10px;
+  left: 92%;
+  height: 25px;
+}
+.modalCloseButton img {
+  border: 0;
+}
+
+.screen-reader-offscreen {
+  position: absolute;
+  left: -999px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+}
+
+/**
+
+**/
+
+.modal {
+  background: #fff;
+  outline: 0;
+  min-width: 250px;
+  max-width: 500px;
+  border-radius: 4px;
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding: 0.5em 1.5em;
+}
+
+.modal-header {
+  border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+.modal-footer {
+  border-top: 1px solid #eee;
+  text-align: right;
+}
+
+.modal--animated {
+  opacity: 0.3;
+  transform: scale(1.1) translateY(-10px);
+  -webkit-transform: scale(1.1) translateY(-10px);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+
+.modal--animated.has-entered {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  -webkit-transform: scale(1) translateY(0);
+}
+
+.underlay {
+  background-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+}
+
+.underlay.has-entered {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/**
+
+**/
+
+.demo-seven__underlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.demo-seven__dialog {
+  flex: 0 1 auto;
+
+  /* allow height of modal to flex vertically */
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: 2em;
+  max-height: 100%;
+}
+
+.demo-seven__dialog .modal {
+  border: 2px solid #eee;
+
+  /* scrollable if too tall */
+  max-height: 100%;
+  overflow: auto;
+}
+
+.demo-seven__dialog .modal-footer {
+  background-color: white;
+
+  /* footer always visible */
+  position: sticky;
+  bottom: 0;
+}

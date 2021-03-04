@@ -1,0 +1,14 @@
+li {
+  width: 100%;
+
+  a {
+    display: block;
+    padding: 10px 20px;
+    color: #f3f5f0;
+  }
+  .active {
+    background-color: #de3473;
+
+    color: black;
+  }
+}

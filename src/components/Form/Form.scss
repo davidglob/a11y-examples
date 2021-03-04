@@ -1,0 +1,34 @@
+.form-not-a11y-container {
+  input {
+    display: block;
+    width: 50%;
+  }
+
+  label {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  input[type="submit"] {
+    margin-top: 20px;
+  }
+
+  .input-error {
+    margin: 0px;
+    color: red;
+    display: none;
+  }
+
+  .input-error-a11y {
+    margin: 0px;
+    color: red;
+  }
+
+  .show-error {
+    display: block;
+  }
+
+  .input-no-label {
+    margin-top: 10px;
+  }
+}

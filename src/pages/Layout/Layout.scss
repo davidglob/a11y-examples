@@ -1,0 +1,39 @@
+.layout-container {
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+  &__nav {
+    background-color: #41403c;
+    height: 100vh;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  &__main {
+    padding: 20px 30px;
+    background-color: #f3f5f0;
+  }
+
+  .skip-to-content {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:focus {
+      color: black;
+      background-color: #de3473;
+      height: auto;
+      width: 30%;
+      margin: 10px 35%;
+      padding: 5px;
+      border-radius: 15px;
+      border: 4px solid black;
+      text-align: center;
+      font-size: 1.2em;
+    }
+  }
+}

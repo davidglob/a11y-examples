@@ -1,0 +1,12 @@
+.roleButton {
+  padding: 10px;
+  background-color: #de3473;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  &:hover {
+    background-color: #41403c;
+    color: white;
+  }
+}

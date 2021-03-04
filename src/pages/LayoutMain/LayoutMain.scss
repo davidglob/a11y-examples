@@ -1,0 +1,43 @@
+.main-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "header header" "accessible notaccessible";
+
+  &__header {
+    grid-area: header;
+  }
+
+  &__accessible {
+    grid-area: accessible;
+  }
+
+  &__notaccessible {
+    grid-area: notaccessible;
+  }
+}
+
+.anchor-dropdown {
+  color: #9e1449;
+  display: inline-block;
+  padding: 0px;
+  font-weight: bold;
+}
+
+.screen-reader-new-tab {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/**
+#41403C
+
+#DE3473
+
+#B3D3E0
+
+#D7E9E9
+
+#F3F5F0
+**/
